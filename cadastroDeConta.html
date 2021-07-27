@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastro de conta</title>
+    <!--título da página no navegador-->
 
     <link rel="stylesheet" type="text/css" href="Arquivo CSS/cadastroDeConta.css">
-
     <!--fazendo link com arquivo css-->
 
 
@@ -17,7 +17,7 @@
 
 <body>
 
-    <div class="titulocabe" id="titulocabe">
+    <div class="titulocabe">
         <h2 id="textotitulocabe">Abra sua conta</h2>
         <img id="logo" src="Imagens/Banco_Itau_logo.png">
     </div>
@@ -27,181 +27,181 @@
     <div class="imgpag1">
         <img id="imgpag1" src="Imagens/bussines1.jpeg">
     </div>
-    
-        <!--AQUI-->
-        <form id="form1"> 
-           
-                <fieldset class="grupo">
-                    <!--criando campo-->
-                    <div id="form2" class="formcx1">
-                        <!--verificando-->
-                        <div>
-                            <h3 id="titulocxs">Dados pessoais</h3>
+
+    <!--AQUI-->
+    <form id="form1">
+
+        <fieldset class="grupo">
+            <!--criando campo-->
+            <div id="form2">
+                <!--verificando-->
+                <div>
+                    <h3 id="titulocxs">Dados pessoais</h3>
+                </div>
+                <div class="campo">
+                    <label for="nome">Digite seu nome:</label>
+                    <input type="text" name="nome" id="nome" required><br>
+                    <!--required permite tornar o campo obrigatorio-->
+                </div>
+
+                <div class="campo">
+                    <label for="sexo">Informe seu sexo:</label>
+                    <select id="sexo" name="sexo" class="input2"><br><br>
+                        <option selected disabled value="">Selecione</option>
+                        <!-- selected disabled é para aparece 'selecione' originalmente>-->
+
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="nao binario">Não binário</option><br>
+                    </select><br><br>
+                </div>
+
+                <div class="campo">
+                    <label for="rg">Digite seu RG:</label>
+                    <input type="text" name="rg" id="rg"><br>
+                </div>
+
+
+
+                <div class="campo">
+                    <label for="orgrg">Órgão emissor do RG:</label>
+                    <input type="text" name="orgrg" id="orgrg"><br>
+                </div>
+
+            </div></br>
+
+            <div id="form3">
+                <div class="campo">
+                    <label for="cpf"> Digite seu CPF:</label>
+                    <input type="text" name="cpf" required placeholder="Digite o cpf para validação ..."
+                        id="cpf_digitado">
+                    <small class="form-text text-muted">Digite somente números</small>
+                    <div class="container page-header">
+                        <!--para validar o CPF-->
+
+                        <div id="success" class="alert alert-success" style="display: none;" role="alert">
+                            <strong>Oba!</strong> Seu CPF é válido
                         </div>
-                        <div class="campo">
-                            <label for="nome">Digite seu nome:</label>
-                            <input type="text" name="nome" id="nome" required><br>
-                            <!--required permite tornar o campo obrigatorio-->
+                        <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+                            <strong>Ops!</strong> Seu CPF não é válido
                         </div>
-
-                        <div class="campo">
-                            <label for="sexo">Informe seu sexo:</label>
-                            <select id="sexo" name="sexo" class="input2"><br><br>
-                                <option selected disabled value="">Selecione</option>
-                                <!-- selected disabled é para aparece 'selecione' originalmente>-->
-
-                                <option value="Masculino">Masculino</option>
-                                <option value="Feminino">Feminino</option>
-                                <option value="nao binario">Não binário</option><br>
-                            </select><br><br>
-                        </div>
-
-                        <div class="campo">
-                            <label for="rg">Digite seu RG:</label>
-                            <input type="text" name="rg" id="rg"><br>
-                        </div>
-
-
-
-                        <div class="campo">
-                            <label for="orgrg">Órgão emissor do RG:</label>
-                            <input type="text" name="orgrg" id="orgrg"><br>
-                        </div>
-
-                    </div></br>
-
-                    <div id="form3" class="formcx2">
-                        <div class="campo">
-                            <label for="cpf"> Digite seu CPF:</label>
-                            <input type="text" name="cpf" required placeholder="Digite o cpf para validação ..."
-                                id="cpf_digitado">
-                            <small class="form-text text-muted">Digite somente numeros</small>
-                            <div class="container page-header">
-                                <!--para validar o CPF-->
-
-                                <div id="success" class="alert alert-success" style="display: none;" role="alert">
-                                    <strong>Oba!</strong> Seu CPF é válido
-                                </div>
-                                <div id="error" class="alert alert-danger" style="display: none;" role="alert">
-                                    <strong>Ops!</strong> Seu CPF não é válido
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="campo">
-                            <label for="telefone">Digite seu número de telefone fixo:</label>
-                            <input type="tel" id="phone" name="phone" placeholder="xx-xxxx-xxxx"
-                                pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" required maxlength="12">
-                            <!--determina o formato do número a ser inserido-->
-                            <small>Formato: xx-xxxx-xxxx</small>
-                        </div>
-
-                        <div class="campo">
-                            <label for="celular">Digite seu número de celular:</label>
-                            <input type="tel" id="phone" name="phone" placeholder="xx-xxxxx-xxxx"
-                                pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required maxlength="13">
-                            <small>Formato: xx-xxxxx-xxxx</small>
-                        </div>
-
                     </div>
+                </div>
 
-                    <div id="form4" class="formcx3">
-                        <!--verificando-->
-                        <h3 id="titulocxs">Dados de endereço</h3>
-                        <div class="campo">
-                            <label for="logadouro">Digite o logadouro:</label>
-                            <input type="text" name="logadouro" id="logadouro" required><br>
-                        </div>
+                <div class="campo">
+                    <label for="telefone">Digite seu número de telefone fixo:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="xx-xxxx-xxxx"
+                        pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" maxlength="12">
+                    <!--determina o formato do número a ser inserido-->
+                    <small>Formato: xx-xxxx-xxxx</small>
+                </div>
 
-                        <div class="campo">
-                            <label for="endereco">Digite o endereço:</label>
-                            <input type="text" name="endereco" id="endereco" required><br>
-                        </div>
+                <div class="campo">
+                    <label for="celular">Digite seu número de celular:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="xx-xxxxx-xxxx"
+                        pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required maxlength="13">
+                    <small>Formato: xx-xxxxx-xxxx</small>
+                </div>
 
-                        <div class="campo">
-                            <label for="numero">Digite o número:</label>
-                            <input type="text" name="numero" id="numero" required><br>
-                        </div>
+            </div>
 
-                        <div class="campo">
-                            <label for="estado">Selecione seu estado:</label>
-                            <select required="required" name="estado">
-                                <!--para deixar as opções de estados-->
+            <div id="form4">
 
-                                <option selected disabled value="">Selecione</option>
-                                <option value="1">Acre (AC)</option>
-                                <option value="2">Alagoas (AL)</option>
-                                <option value="3">Amapá (AP)</option>
-                                <option value="4">Amazonas (AM)</option>
-                                <option value="5">Bahia (BA)</option>
-                                <option value="6">Ceará (CE)</option>
-                                <option value="7">Distrito Federal (DF)</option>
-                                <option value="8">Espírito Santo (ES)</option>
-                                <option value="9">Goiás (GO)</option>
-                                <option value="10">Maranhão (MA)</option>
-                                <option value="11">Mato Grosso (MT)</option>
-                                <option value="12">Mato Grosso do Sul (MS)</option>
-                                <option value="13">Minas Gerais (MG)</option>
-                                <option value="14">Pará (PA) </option>
-                                <option value="15">Paraíba (PB)</option>
-                                <option value="16">Paraná (PR)</option>
-                                <option value="17">Pernambuco (PE)</option>
-                                <option value="18">Piauí (PI)</option>
-                                <option value="19">Rio de Janeiro (RJ)</option>
-                                <option value="20">Rio Grande do Norte (RN)</option>
-                                <option value="21">Rio Grande do Sul (RS)</option>
-                                <option value="22">Rondônia (RO)</option>
-                                <option value="23">Roraima (RR)</option>
-                                <option value="24">Santa Catarina (SC)</option>
-                                <option value="25">São Paulo (SP)</option>
-                                <option value="26">Sergipe (SE)</option>
-                                <option value="27"> Tocantins (TO)</option>
-                            </select><br><br>
-                        </div>
+                <h3 id="titulocxs">Dados de endereço</h3>
+                <div class="campo">
+                    <label for="logadouro">Digite o logadouro:</label>
+                    <input type="text" name="logadouro" id="logadouro"><br>
+                </div>
 
-                        <div class="campo">
-                            <label for="cep">Digite o CEP:</label>
-                            <input type="text" name="cep" id="cep" required><br>
-                        </div>
+                <div class="campo">
+                    <label for="endereco">Digite o endereço:</label>
+                    <input type="text" required name="endereco" id="endereco"><br>
+                </div>
 
-                    </div>
+                <div class="campo">
+                    <label for="numero">Digite o número:</label>
+                    <input type="text" required name="numero" id="numero"><br>
+                </div>
 
-                    <div id="form5" class="formcx4">
-                        <!--verificando-->
-                        <h3 id="titulocxs">Dados de login</h3>
+                <div class="campo">
+                    <label for="estado">Selecione seu estado:</label>
+                    <select name="estado">
+                        <!--para deixar as opções de estados-->
+                        <option selected disabled value="">Selecione</option>
+                        <option value="1">Acre (AC)</option>
+                        <option value="2">Alagoas (AL)</option>
+                        <option value="3">Amapá (AP)</option>
+                        <option value="4">Amazonas (AM)</option>
+                        <option value="5">Bahia (BA)</option>
+                        <option value="6">Ceará (CE)</option>
+                        <option value="7">Distrito Federal (DF)</option>
+                        <option value="8">Espírito Santo (ES)</option>
+                        <option value="9">Goiás (GO)</option>
+                        <option value="10">Maranhão (MA)</option>
+                        <option value="11">Mato Grosso (MT)</option>
+                        <option value="12">Mato Grosso do Sul (MS)</option>
+                        <option value="13">Minas Gerais (MG)</option>
+                        <option value="14">Pará (PA) </option>
+                        <option value="15">Paraíba (PB)</option>
+                        <option value="16">Paraná (PR)</option>
+                        <option value="17">Pernambuco (PE)</option>
+                        <option value="18">Piauí (PI)</option>
+                        <option value="19">Rio de Janeiro (RJ)</option>
+                        <option value="20">Rio Grande do Norte (RN)</option>
+                        <option value="21">Rio Grande do Sul (RS)</option>
+                        <option value="22">Rondônia (RO)</option>
+                        <option value="23">Roraima (RR)</option>
+                        <option value="24">Santa Catarina (SC)</option>
+                        <option value="25">São Paulo (SP)</option>
+                        <option value="26">Sergipe (SE)</option>
+                        <option value="27"> Tocantins (TO)</option>
+                    </select><br><br>
+                </div>
+
+                <div class="campo">
+                    <label for="cep">Digite o CEP:</label>
+                    <input type="text" name="cep" id="cep"><br>
+                </div>
+
+            </div>
+
+            <div id="form5">
+
+                <h3 id="titulocxs">Dados de login</h3>
+                <div class="campo">
+                    <label for="login">Crie um login:</label>
+                    <input type="text" name="login" id="login"><br>
+                </div>
+
+                <div class="campo">
+                    <label for="senha"> Crie uma senha(max 10 caracteres):</label>
+                    <input type="password" name="senha" id="senha"><br>
+                </div>
+
+                <div class="campo">
+                    <label for="login">Digite a senha novamente:</label>
+                    <input type="password" name="senha2" id="senha2"><br>
+                </div>
+
+            </div>
 
 
-                        <div class="campo">
-                            <label for="login">Crie um login:</label>
-                            <input type="text" name="login" id="login" required><br>
-                        </div>
 
-                        <div class="campo">
-                            <label for="senha"> Crie uma senha(max 10 caracteres):</label>
-                            <input type="password" name="senha" id="senha"><br>
-                        </div>
+        </fieldset>
 
-                        <div class="campo">
-                            <label for="login">Digite a senha novamente:</label>
-                            <input type="password" name="senha2" id="senha2"><br>
-                        </div>
+        <div>
+            <button id="botão" class="botão" type="submit" onclick="validacao()">Criar conta</button>
+        </div>
 
-                    </div>
+    </form>
 
-                  <!--  <button id="botão" class="botão" type="submit" onclick="validacao()">Criar conta</button>-->
-
-                </fieldset>
-
-            
-        </form>
-    
 
     <div id="rodape">
         <h6 id="textorodape">© 2021 Itaú Unibanco S.A.</h6>
     </div>
 
 
-    <script src="Arquivo Java Script/script.js"></script>  
+    <script src="Arquivo Java Script/script.js"></script>
     <!--busca o arquivo javasript-->
 
 </body>

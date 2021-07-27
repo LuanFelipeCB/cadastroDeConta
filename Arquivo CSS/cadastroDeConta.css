@@ -1,152 +1,3 @@
-#imgpag1{ /*Determinando tamanho e altura da imagem*/
-    width: 25%;
-    height: 1600%;
-    top: 120%;
-    left: 4%;
-    position: absolute;
-}
-
-.imgpag1{ /*Determinando posição da div da imagem*/
-    position: absolute;
-    top: 70%;
-    justify-content:space-evenly;
-    width: 100%;
-    height: 5%;
-    bottom: 50%;
-    left: 0%;
-
-}
-
-#titulocxs{ /*id determina posição do titulo da cx1*/
-    position: absolute;
-    top: -100px;
-    left: 330px;
-
-}
-
-/*.formcx1{ /*formatação cx1 dentro do form*
-    position: absolute;;
-    top: 370px;
-    left: 330px;
-}*/
-#form1{
-    position: absolute;
-    top: 40%;
-    justify-content:space-evenly;
-    width: 100%;
-    height: 5%;
-    bottom: 50%;
-    left: 42%;
-}
-#form2{
-    width: 100%;
-    height: 6%;
-    top: 120%;
-    left: -15%;
-    position: absolute;
-
-}
-
-#form3{
-    width: 100%;
-    height: 6%;
-    top: 440%;
-    left: -15%;
-    position: absolute;
-
-}
-
-#form4{
-    width: 90%;
-    height: 6%;
-    top: 1040%;
-    left: -15%;
-    position: absolute;
-
-}
-
-#form5{
-    width: 90%;
-    height: 6%;
-    top: 2030%;
-    left: -15%;
-    position: absolute;
-
-}
-
-
-/*.formcx2{ /*formatação cx2 dentro do form
-    position: absolute;;
-    top: 480px;
-    left: 330px;
- 
-}
-
-.formcx3{ /*formatação cx3 dentro do form
-    position: absolute;;
-    top: 680px;
-    left: 330px;
- 
-}
-
-.formcx4{ /*formatação cx4 dentro do form
-    position: absolute;;
-    top: 960px;
-    left: 330px;
- 
-}*/
-
-.botão { /*classe botão, o botão*/
-    font-size: 1.2em;
-    background: rgb(255, 94, 0);
-    border: 0;
-    margin-bottom: 30em; /*verificar*/
-    margin-top: 30em;
-    margin-left: 15em;
-    color: #ffffff;
-    padding: 0.2em 0.6em;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0, 2);
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0, 5);
-    position: absolute;
-    top: 90%;
-    left: 100%;
-    margin-right: 10em;
-    transform: translate(-50%, -50%);
-}
-
-/* #rodape e #textoradape são kodelos pra responsividedade*/
-
-#rodape{  /*Formatação do rodapr*/
-    position: absolute;
-    background-color:darkslateblue;
-    font-family:'monospace';
-    color: rgb(250, 248, 248);
-    justify-content:space-evenly;
-    top: 1300px;
-    width: 100%;
-    height: 25%;
-    bottom: 50%;
-    left: 0%;
-}
-
-
-#textorodape{
-    position: absolute;
-    top: 30%;
-    left: 45%;
-}
-
-
-#logo{   /*imagem do logo */
-    position: absolute;
-    width: 9%;
-    height: 80%;
-    top: 10%;
-    left: 4%;
-}
-
-
-/*JA REVI-----------------------------------------------------------------------------------------------------*/
 .titulocabe{  /*Abra sua conta*/
     position: absolute;
     background-color: rgb(255, 94, 0);
@@ -166,104 +17,47 @@
     left: 40%;
 }
 
-#titulocx2{
-   
+#logo{   /*imagem do logo */
     position: absolute;
-    top: 3%;
-    left: 40%;
-
+    width: 9%;
+    height: 80%;
+    top: 10%;
+    left: 4%;
 }
 
-#titulocx3{
-   
+#imgpag1{ /*Determinando tamanho e altura da imagem*/
+    width: 25%;
+    height: 1600%;
+    top: 120%;
+    left: 4%;
     position: absolute;
-    top: 3%;
-    left: 28%;
-
 }
 
-#tabela{
-    font-family:'monospace';
-    padding-top: 3em;
-    padding-left: 10em;
-}
-
-
-#imgpag2{
+.imgpag1{ /*Determinando posição da div da imagem*/
     position: absolute;
-    top: 150%;
-    left: -25%;
-    width: 20em;
-    height: 29em;
+    top: 70%;
+    justify-content:space-evenly;
+    width: 100%;
+    height: 5%;
+    bottom: 50%;
+    left: 0%;
+
 }
 
-
-/* NAO TO USANDO#form2{
+#form1{
     position: absolute;
-    width: 106%;
-    left: -16.9%;
-    top: 100%;
-   /* padding-right: 25em;
-    padding-left: 34em;
-    padding-top: -60em;
-    padding-bottom: -300em;*/
-  /*COOOOOOLOOOOOCAR BORDER 0 AQUI*
-  border: 0px;
+    top: 40%;
+    justify-content:space-evenly;
+    width: 100%;
+    height: 5%;
+    bottom: 50%;
+    left: 42%;
 }
 
-#form3{
-    position: absolute;
-    width: 110%;
-    left: -5.9%;
-    top: 200%;
-    right: 101%;
-   /* padding-right: 25em;
-    padding-left: 34em;
-    padding-top: -60em;
-    padding-bottom: -300em;*/
-  /*COOOOOOLOOOOOCAR BORDER 0 AQUI*
-  border: 0px;
-}*/
-
-#formj2{
-    position: absolute;
-    width: 74%;
-    left:-60px ;
-    top:95%;
-    right: -80px;
-   /* padding-right: 25em;
-    padding-left: 34em;
-    padding-top: -60em;
-    padding-bottom: -300em;*/
-  /*COOOOOOLOOOOOCAR BORDER 0 AQUI*/
-  border: 0px;
-
-
+fieldset.grupo .campo{ /*no fiieldset classes grupo e campo */
+    float:left;
+    margin-right: 4em;
 }
-
-#botão{
-    position: absolute;
-    top: 100%;
-    left: 30%;
-    
-}
-
-/*formatação da tabela*/
-
-
-
-
-.input1{
-
-    padding-left: 90px;
-}
-
-.input2{
-
-    padding-left: 130px;
-    padding-right: 10px;
-}
-
 
 .grupo{
     justify-content: center;
@@ -271,7 +65,89 @@
     margin-top: -1em;
     margin-bottom: 2em;
     margin-right: 100%;
-    
+    border: 0px;
+}
+
+#form2{
+    width: 100%;
+    height: 6%;
+    top: 120%;
+    left: -15%;
+    position: absolute;
+}
+
+#titulocxs{ /*id determina posição do titulo das cxs*/
+    position: absolute;
+    top: -100px;
+    left: 330px;
+
+}
+
+#form3{
+    width: 100%;
+    height: 6%;
+    top: 440%;
+    left: -15%;
+    position: absolute;
+}
+
+#form4{
+    width: 90%;
+    height: 6%;
+    top: 1040%;
+    left: -15%;
+    position: absolute;
+}
+
+#form5{
+    width: 90%;
+    height: 6%;
+    top: 2030%;
+    left: -15%;
+    position: absolute;
+}
+
+.botão { /*classe botão, o botão*/
+    font-size: 1.2em;
+    background: rgb(255, 94, 0);
+    border: 0;
+    margin-bottom: 30em; /*verificar*/
+    margin-top: 30em;
+    margin-left: 15em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0, 2);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0, 5);
+    position: absolute;
+    top: 90%;
+    left: 100%;
+    margin-right: 10em;
+    transform: translate(-50%, -50%);
+}
+
+#rodape{  /*Formatação do rodapr*/
+    position: absolute;
+    background-color:darkslateblue;
+    font-family:'monospace';
+    color: rgb(250, 248, 248);
+    justify-content:space-evenly;
+    top: 1300px;
+    width: 100%;
+    height: 25%;
+    bottom: 50%;
+    left: 0%;
+}
+
+#textorodape{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+#botão{
+    position: absolute;
+    top: 720%;
+    left: -10%;   
 }
 
 input, select, textarea, button{/*borda nas caixas de texto*/
@@ -288,20 +164,6 @@ input, select, textarea, button{/*borda nas caixas de texto*/
     display: block;
 }
 
-
-fieldset.grupo .campo{ /*no fiieldset classes grupo e campo */
-
-    float:left;
-    margin-right: 4em;
-    
-  
-}
-
-fieldset{
-   
-}
-
-
 .campo input[type="text"], .campo input[type="email"], .campo input[type="password"], .campo input[type="tel"], .campo select, .campo textarea {
     padding: 0.2em;
     border: 1px solid #59429d;      /*na classe campo, input com esses atributos, select e textarea*/
@@ -316,7 +178,6 @@ fieldset{
 .campo input:focus, .campo select:focus, .campo textarea:focus{
     background: #E0E0F8; /*fundo na pseudo classe focus muda de cor quando deixa em evidencia*/
 }
-
 
 .botão:hover {  /*mudança no botão quando passar o mouse por cima*/
     background: orange;
