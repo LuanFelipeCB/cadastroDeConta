@@ -2,6 +2,8 @@
 
 Projeto desenvolvido para o programa de formação Itaú Tech.
 
+A proposta:
+
 Front:
 
 Domínio - Modelagem de Dados:
